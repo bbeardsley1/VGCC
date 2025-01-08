@@ -10,11 +10,24 @@ header {
     background-color: #1a1a1a;
     padding: 20px;
     text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 header h1 {
     color: #00ff00;
     text-shadow: 0 0 10px #00ff00;
+    animation: neon 1.5s infinite alternate;
+}
+
+@keyframes neon {
+    from {
+        text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00, 0 0 40px #00ff00, 0 0 50px #00ff00, 0 0 60px #00ff00, 0 0 70px #00ff00;
+    }
+    to {
+        text-shadow: 0 0 20px #00ff00, 0 0 30px #00ff00, 0 0 40px #00ff00, 0 0 50px #00ff00, 0 0 60px #00ff00, 0 0 70px #00ff00, 0 0 80px #00ff00;
+    }
 }
 
 nav ul {
@@ -30,20 +43,32 @@ nav ul li {
 nav ul li a {
     color: #00ff00;
     text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #00cc00;
 }
 
 main {
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 section {
     margin-bottom: 20px;
+    width: 80%;
+    max-width: 800px;
 }
 
 #events {
     background-color: #1a1a1a;
     padding: 20px;
     border-radius: 10px;
+    width: 80%;
+    max-width: 800px;
 }
 
 #events h2 {
@@ -55,6 +80,8 @@ form {
     background-color: #1a1a1a;
     padding: 20px;
     border-radius: 10px;
+    width: 80%;
+    max-width: 800px;
 }
 
 form label {
@@ -77,8 +104,18 @@ form button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s;
 }
 
 form button:hover {
     background-color: #00cc00;
+}
+
+footer {
+    background-color: #1a1a1a;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
