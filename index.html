@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Game Creation Club</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Video Game Creation Club</h1>
+        <nav>
+            <ul>
+                <li><a href="#main">Home</a></li>
+                <li><a href="#posts">Posts</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#login">Login</a></li>
+                <li><a href="#join">Join the Club</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="main">
+        <section id="welcome">
+            <h2>Welcome to the Video Game Creation Club</h2>
+            <p>We meet after school most Thursdays from 15:30 - 17:00 during the school year.</p>
+        </section>
+        <section id="posts">
+            <h2>Posts</h2>
+            <div id="post-list">
+                <!-- Posts will be dynamically loaded here -->
+            </div>
+            <div id="comment-section">
+                <h3>Leave a Comment</h3>
+                <textarea id="comment" placeholder="Write your comment here..."></textarea>
+                <button onclick="postComment()">Post Comment</button>
+            </div>
+        </section>
+        <aside id="events">
+            <h2>Events</h2>
+            <ul id="event-list">
+                <!-- Events will be dynamically loaded here -->
+            </ul>
+        </aside>
+    </main>
+    <section id="login">
+        <h2>Login</h2>
+        <form id="login-form">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">Login</button>
+        </form>
+    </section>
+    <section id="join">
+        <h2>Join the Club</h2>
+        <form id="join-form">
+            <label for="student-id">Student ID:</label>
+            <input type="text" id="student-id" name="student-id" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="username">Username:</label>
+            <input type="text" id="username-join" name="username" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password-join" name="password" required>
+            <button type="submit">Join</button>
+        </form>
+    </section>
+    <script src="scripts.js"></script>
+</body>
+</html>
