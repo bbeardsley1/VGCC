@@ -4,29 +4,33 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
+    background-image: url('space-background.jpg');
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 header {
-    background-color: #1a1a1a;
+    background-color: rgba(0, 0, 0, 0.8);
     padding: 20px;
     text-align: center;
     position: sticky;
     top: 0;
     z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
 header h1 {
-    color: #00ff00;
-    text-shadow: 0 0 10px #00ff00;
+    color: #bb86fc;
+    text-shadow: 0 0 10px #bb86fc;
     animation: neon 1.5s infinite alternate;
 }
 
 @keyframes neon {
     from {
-        text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00, 0 0 40px #00ff00, 0 0 50px #00ff00, 0 0 60px #00ff00, 0 0 70px #00ff00;
+        text-shadow: 0 0 10px #bb86fc, 0 0 20px #bb86fc, 0 0 30px #bb86fc, 0 0 40px #bb86fc, 0 0 50px #bb86fc, 0 0 60px #bb86fc, 0 0 70px #bb86fc;
     }
     to {
-        text-shadow: 0 0 20px #00ff00, 0 0 30px #00ff00, 0 0 40px #00ff00, 0 0 50px #00ff00, 0 0 60px #00ff00, 0 0 70px #00ff00, 0 0 80px #00ff00;
+        text-shadow: 0 0 20px #bb86fc, 0 0 30px #bb86fc, 0 0 40px #bb86fc, 0 0 50px #bb86fc, 0 0 60px #bb86fc, 0 0 70px #bb86fc, 0 0 80px #bb86fc;
     }
 }
 
@@ -41,13 +45,13 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #00ff00;
+    color: #bb86fc;
     text-decoration: none;
     transition: color 0.3s;
 }
 
 nav ul li a:hover {
-    color: #00cc00;
+    color: #6200ea;
 }
 
 main {
@@ -61,27 +65,33 @@ section {
     margin-bottom: 20px;
     width: 80%;
     max-width: 800px;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
 #events {
-    background-color: #1a1a1a;
+    background-color: rgba(0, 0, 0, 0.8);
     padding: 20px;
     border-radius: 10px;
     width: 80%;
     max-width: 800px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
 #events h2 {
-    color: #00ff00;
-    text-shadow: 0 0 10px #00ff00;
+    color: #bb86fc;
+    text-shadow: 0 0 10px #bb86fc;
 }
 
 form {
-    background-color: #1a1a1a;
+    background-color: rgba(0, 0, 0, 0.8);
     padding: 20px;
     border-radius: 10px;
     width: 80%;
     max-width: 800px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
 form label {
@@ -95,10 +105,12 @@ form input, form textarea {
     margin-bottom: 10px;
     border: none;
     border-radius: 5px;
+    background-color: #333;
+    color: white;
 }
 
 form button {
-    background-color: #00ff00;
+    background-color: #bb86fc;
     color: black;
     padding: 10px 20px;
     border: none;
@@ -108,14 +120,15 @@ form button {
 }
 
 form button:hover {
-    background-color: #00cc00;
+    background-color: #6200ea;
 }
 
 footer {
-    background-color: #1a1a1a;
+    background-color: rgba(0, 0, 0, 0.8);
     padding: 10px;
     text-align: center;
     position: fixed;
     bottom: 0;
     width: 100%;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.5);
 }
